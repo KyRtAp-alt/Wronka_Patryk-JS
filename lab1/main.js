@@ -7,7 +7,6 @@ const srednia = document.querySelector('#srednia');
 const min = document.querySelector('#min');
 const max = document.querySelector('#max');
 
-
 // console.dir(liczba1);
 // console.dir(liczba2);
 // console.dir(liczba3);
