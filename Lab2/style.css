@@ -3,6 +3,7 @@
     height: 400px;
     margin: 100px auto 0 auto;
     overflow: hidden;
+    display: flex;
 
 }
 
@@ -12,12 +13,6 @@
     animation-duration: 4s;
     animation-delay: 1s;
     animation-timing-function: ease-in-out;
-}
-
-
-
-#dotBox {
-    text-align: center;
 }
 
 @keyframes pociag-w-lewo {
@@ -30,6 +25,10 @@
     }
 }
 
+#dotBox {
+    text-align: center;
+}
+
 .dot {
     cursor: pointer;
     height: 20px;
@@ -38,5 +37,4 @@
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
-    margin-top: 50px;
 }
