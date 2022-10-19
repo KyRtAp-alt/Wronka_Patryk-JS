@@ -3,8 +3,6 @@
     height: 400px;
     margin: 100px auto 0 auto;
     overflow: hidden;
-    display: flex;
-
 }
 
 #slider .slides {
@@ -25,16 +23,34 @@
     }
 }
 
-#dotBox {
-    text-align: center;
-}
-
 .dot {
+
     cursor: pointer;
-    height: 20px;
-    width: 20px;
-    margin: 0 2px;
-    background-color: #bbb;
+    height: 15px;
+    width: 15px;
+    background-color: #bbc;
     border-radius: 50%;
     display: inline-block;
+}
+
+#dotBox {
+    text-align: center;
+    margin-top: 15px;
+    justify-content: center;
+    display: flex;
+
+}
+
+.carousel {
+    justify-content: center;
+    display: flex;
+    margin-top: 15px;
+}
+
+.button.back {
+    font-size: 25px;
+}
+
+.button.next {
+    font-size: 25px;
 }
