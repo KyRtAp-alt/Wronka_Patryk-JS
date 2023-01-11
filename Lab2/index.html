@@ -9,23 +9,25 @@
 </head>
 
 <body>
-    <div id="slider">
-        <img src="http://picsum.photos/seed/picsum/600/400" alt="" class="img">
-        <img src="https://picsum.photos/600/400" alt="" class="img">
-        <img src="https://picsum.photos/id/237/600/400" alt="" class="img">
+    <div class="container">
+        <div class="slider">
+            <div class="slides">
+                <img src="http://picsum.photos/seed/picsum/600/400" alt="" class="img">
+                <img src="https://picsum.photos/600/400" alt="" class="img">
+                <img src="https://picsum.photos/id/237/600/400" alt="" class="img">
+            </div>
+        </div>
+        <div class="controls">
+            <button class="prev">&#8678 Wstecz</button>
+            <button class="next">Dalej &#8680</button>
+        </div>
+        <div id="dotBox">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <button class="controls" id="pause">Pause</button>
     </div>
-    <div class="carousel">
-        <button class="button back">&#8678;</button>
-        <button class="button next">&#8680;</button>
-    </div>
-    <div id="dotBox">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-    </div>
-
-    <main>
-    </main>
     <script src="main.js"></script>
 </body>
 

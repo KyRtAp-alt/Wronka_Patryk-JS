@@ -1,4 +1,4 @@
-#slider {
+/* #slider {
     width: 600px;
     height: 400px;
     margin: 100px auto 0 auto;
@@ -53,4 +53,46 @@
 
 .button.next {
     font-size: 25px;
+} */
+
+.container {
+    max-width: 2400px;
+    margin: 30px auto;
+    padding: 30px;
+}
+
+.slider {
+    width: 600px;
+    height: 400px;
+    margin: 100px auto 0 auto;
+    overflow: hidden;
+}
+
+.slides {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+
+.controls {
+    justify-content: center;
+    display: flex;
+    padding: 10px 10px;
+
+}
+
+.dot {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    background-color: #bbc;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#dotBox {
+    text-align: center;
 }
