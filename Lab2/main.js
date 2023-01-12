@@ -1,20 +1,3 @@
-// let index = 0;
-// showSlides();
-
-// function showSlides() {
-//     let i;
-//     let slides = document.getElementsByClassName("img");
-//     for (i = 0; i < slides.length; i++) {
-//         slides[i].style.display = "none";
-//     }
-//     index++;
-//     if (index > slides.length) {
-//         index = 1
-//     }
-//     slides[index - 1].style.display = "block";
-//     setTimeout(showSlides, 1000);
-// }
-
 let licznik = 0
 
 const main = document.querySelector('main')
@@ -31,7 +14,7 @@ const intervalRef = setInterval(
 
         main.innerHTML = 'From interval ' + licznik / 600
     },
-    1000
+    5000
 )
 
 document.querySelector('.next').addEventListener('click', () => {
@@ -54,3 +37,27 @@ document.querySelector('.prev').addEventListener('click', () => {
 
 var playing = true;
 var pauseButton = document.getElementById('pause');
+
+
+
+
+
+
+
+
+// let index = 0;
+// showSlides();
+
+// function showSlides() {
+//     let i;
+//     let slides = document.getElementsByClassName("img");
+//     for (i = 0; i < slides.length; i++) {
+//         slides[i].style.display = "none";
+//     }
+//     index++;
+//     if (index > slides.length) {
+//         index = 1
+//     }
+//     slides[index - 1].style.display = "block";
+//     setTimeout(showSlides, 1000);
+// }
