@@ -1,5 +1,6 @@
 let licznik = 0
 
+const main = document.querySelector('main')
 const slides = document.querySelector('.slides')
 
 document.querySelector('.next').addEventListener('click', () => {
