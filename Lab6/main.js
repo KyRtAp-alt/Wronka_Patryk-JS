@@ -1,34 +1,35 @@
-const canvas = document.querySelector('canvas');
+window.addEventListener(`deviceorientation`, handleOrientation, true);
 
-const ctx = canvas.getContext('2d');
+const ball = document.querySelector(".ball");
 
-const holeX = 50;
-const holeY = 50;
+const space = document.querySelector(".space");
 
-let ballX = 0;
-let ballY = 0;
+const exit = document.querySelector(".exit");
 
-const radius = 25;
+const maxX = space.clientWidth - ball.clientWidth;
 
-ctx.beginPath();
-ctx.arc(ballX, ballY, radius, 0, Math.PI * 2);
-ctx.fillStyle = '#AAA';
-ctx.fill();
+const maxY = space.clientHeight - ball.clientHeight;
 
-let startTime = null;
-
-let records = [];
-
-function handleMove(event) {
-    ballX = event.gamma;
-    ballY = event.beta;
+function handleOrientation(event) {
+    const absolute = event.absolute;
+    const alpha = event.alpha;
+    const beta = event.beta;
+    const gamma = event.gamma;
 }
 
-if (ballX === holeX && ballY === holeY) {
-    let endTime = Date.now();
-    let timeElapsed = endTime - startTime;
-    records.push(timeElapsed);
+function handleOrientation(event) {
+    let x = event.beta;
+    let y = event.gamma;
+
+    if (x > 90) {
+        x = 90;
+    }
+    if (x < -90) {
+        x = -90;
+    }
+    x += 90;
+    y += 90;
+
+    ball.style.top = `${(maxY*y) / 180 - 10}px`;
+    ball.style.left = `${(maxX * x) / 180 - 10}px`;
 }
-
-
-window.addEventListener('deviceorientation', handleMove);
