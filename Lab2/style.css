@@ -1,6 +1,10 @@
+body {
+    background-color: #74b9ff;
+}
+
 .container {
     max-width: 2400px;
-    margin: 30px auto;
+    /* margin: 30px auto; */
     padding: 30px;
 }
 
@@ -9,6 +13,7 @@
     height: 400px;
     margin: 100px auto 0 auto;
     overflow: hidden;
+    border: 5px solid whitesmoke;
 }
 
 .slides {
@@ -17,7 +22,7 @@
     display: flex;
     position: relative;
     left: 0;
-    transition: all ease 1s;
+    transition: all ease 2s;
 }
 
 .controls {
@@ -31,7 +36,7 @@
     cursor: pointer;
     height: 20px;
     width: 20px;
-    background-color: #bbc;
+    background-color: whitesmoke;
     border-radius: 50%;
     display: inline-block;
 }
