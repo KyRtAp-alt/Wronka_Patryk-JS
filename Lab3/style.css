@@ -1,3 +1,25 @@
-.przycisk1 {
-    font-size: 15px;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.Box {
+    display: grid;
+    place-items: center;
+    background-color: aqua;
+}
+
+.drum {
+    font-size: 50px;
+    padding: 10px 10px;
+    border-radius: 35px;
+}
+
+.set {
+    max-width: 2400px;
+    margin: 30px auto;
+    padding: 30px;
 }
