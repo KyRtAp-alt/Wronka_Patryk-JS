@@ -28,7 +28,8 @@ class Particle {
         // this.x = canvas.width/2;
         // this.y = canvas.height/2;
         //size
-        this.size = Math.random() * 20 + 1;
+        this.size = Math.random() * 30 + 1;
+        this.color = '#' + Math.floor(Math.random() * 16777215).toString(16);
         //speed ball
         this.speedX = Math.random() * 5 - 1.5;
         this.speedY = Math.random() * 5 - 1.5;
@@ -47,12 +48,11 @@ class Particle {
     }
     draw() {
         ctx.beginPath();
-        ctx.fillStyle = "#c23616"
+        ctx.fillStyle = this.color;
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2)
         ctx.fill();
         ctx.closePath();
     }
-
 }
 
 function handle() {
